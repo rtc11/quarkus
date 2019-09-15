@@ -3,7 +3,7 @@ Quarkus with support for GraalVM, Open JDK 11 og Open JDK 8
 Make sure you have the right java version in `pom.xml`.
 
 ```diff
-- GraalVM 1.19.1 is built on jdk 8. 
+- GraalVM 19.2.0.1 is built on jdk 8. 
 ``` 
 
 Build first with `mvn package` for java 11 and 8, or build with 
