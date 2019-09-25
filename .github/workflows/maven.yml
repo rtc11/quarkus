@@ -10,7 +10,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn package
+      run: mvn package -Pnative -Dnative-image.docker-build=true
     - name: setup-graalvm
       uses: rtc11/setup-graalvm@master
       with:
