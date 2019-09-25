@@ -1,12 +1,8 @@
 name: Java CI
-
 on: [push]
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v1
     - name: Set up JDK 1.8
@@ -15,3 +11,7 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn package
+    - name: setup-graalvm
+      uses: rtc11/setup-graalvm@master
+      with:
+        args: https://github.com/oracle/graal/releases/download/vm-19.2.0.1/graalvm-ce-linux-amd64-19.2.0.1.tar.gz
