@@ -1,3 +1,7 @@
+<p align="left">
+  <a href="https://github.com/rtc11/quarkus"><img alt="GitHub Actions status" src="https://github.com/rtc11/quarkus/workflows/Java%20CI/badge.svg"></a>
+</p>
+
 Quarkus with support for GraalVM, Open JDK 11 og Open JDK 8
 
 Make sure you have the right java version in `pom.xml`.
