@@ -10,11 +10,18 @@ import static org.hamcrest.CoreMatchers.is;
 class ExampleResourceTest {
 
     @Test
-    void testHelloEndpoint() {
+    void isAlive() {
         given()
-                .when().get("/hello")
+                .when().get("/internal/alive")
                 .then()
-                .statusCode(200)
-                .body(is("hello"));
+                .statusCode(200);
+    }
+
+    @Test
+    void isReady() {
+        given()
+                .when().get("/internal/ready")
+                .then()
+                .statusCode(200);
     }
 }
